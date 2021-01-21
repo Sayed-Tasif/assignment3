@@ -4,11 +4,11 @@
 //Kilometer to meter convertion
 function kilometerToMeter(km){
     if(km < 0){
-
+        console.log ("You have given and negative Number.\n Code will convert it to a positive value to continue the calculation.\n");
     }
     let value = Math.abs(km)
-    let conv = value * 1000;
-    return conv;
+    let meter = value * 1000;
+    return meter;
 }
 
 
@@ -17,6 +17,9 @@ function kilometerToMeter(km){
 //This is the solution for the second problem.
 //Budget Calculator.
 function budgetCalculator(watch, phone, laptop){
+    if(watch < 0 || phone < 0 || laptop < 0){
+        console.log ("You have given negative value(s).\n Code will convert it to a positive value to continue calculation.\n");
+    }
     const watchPrice = 50;
     const phonePrice = 100;
     const laptopPrice = 500;
@@ -37,6 +40,9 @@ function budgetCalculator(watch, phone, laptop){
 //This is the solution for the third problem.
 //Calculating hotel cost.
 function hotelCost(days){
+    if(days < 0){
+        console.log ("You have given and negative Number.\n Code will convert it to a positive value to continue the calculation.\n");
+    }
     days = Math.abs(days);
     if(days <= 10){
         var totalRent1 = days * 100;
